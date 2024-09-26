@@ -19,7 +19,7 @@ class ProfileController extends Controller
             'age'  => $age ,
         ];
 
-        $cookie = cookie('access_token','123-xyz',1,'/',$_SERVER['SERVER_NAME'],false,true);
+        $cookie = cookie('access_token','123-XYZ',1,'/',$_SERVER['SERVER_NAME'],false,true);
 
         return response()-> json($data,200)->withCookie($cookie);
         
